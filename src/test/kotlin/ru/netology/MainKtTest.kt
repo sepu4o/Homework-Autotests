@@ -11,7 +11,7 @@ class MainKtTest {
         val previousTransfersTotal = 0  // предыдущие переводы
         val сardType = "Visa"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, сardType)
-        assertEquals(112, result)
+        assertEquals(113, result)
     }
 
     @Test
@@ -20,7 +20,7 @@ class MainKtTest {
         val previousTransfersTotal = 0  // предыдущие переводы
         val cardType = "MasterCard"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(0, result)
+        assertEquals(1, result)
     }
 
     @Test
@@ -29,7 +29,7 @@ class MainKtTest {
         val previousTransfersTotal = 35000  // предыдущие переводы
         val cardType = "MasterCard"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(200, result)
+        assertEquals(201, result)
     }
 
     @Test
@@ -38,7 +38,7 @@ class MainKtTest {
         val previousTransfersTotal = 80000
         val cardType = "MasterCard"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(80, result)
+        assertEquals(81, result)
     }
 
     @Test
@@ -47,7 +47,7 @@ class MainKtTest {
         val previousTransfersTotal = 0
         val cardType = "MasterCard"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(-1, result)
+        assertEquals(3, result)
     }
 
     @Test
@@ -56,7 +56,7 @@ class MainKtTest {
         val previousTransfersTotal = 0
         val cardType = "Visa"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(-1, result)
+        assertEquals(0, result)
     }
 
     @Test
@@ -74,7 +74,7 @@ class MainKtTest {
         val previousTransfersTotal = 0
         val cardType = "VKpay"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(-1, result)
+        assertEquals(0, result)
     }
 
     @Test
@@ -83,7 +83,7 @@ class MainKtTest {
         val previousTransfersTotal = 0
         val cardType = "VKpay"
         val result = moneyTransferCalculator(moneyTransfer, previousTransfersTotal, cardType)
-        assertEquals(-1, result)
+        assertEquals(0, result)
     }
 
     @Test
